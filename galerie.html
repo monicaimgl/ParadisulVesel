@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     <!--BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+     <!--JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.7.0.js" 
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous">
+        </script>
+     <!--JS TYPED-->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+        </script>
+     <!--FAVICON-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+         <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+
+        
+        
+        <title> Galerie foto - Paradisul Vesel</title>
+        <link rel="icon" type="x-icon" href="/Paradisul Vesel/images/favicon_io/favicon.ico">
+        <link rel="stylesheet" href="galerie.css">
+
+    </head>
+
+    <body>
+        <header>
+
+            <!--NAVBAR -->
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container">
+                        <a href="acasa.html" class="navbar-brand"> <span>Paradisul Vesel
+                        <img id="logoimage" src="images/rainbow.png" alt="imglogo"> </span>
+                        </a>
+                        
+                        <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse"
+                         data-bs-target="#navmenu"> <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navmenu">
+                            <ul class="navbar-nav nav-tabs ms-auto" id="navtabs">
+                                <li class="nav-item">
+                                    <a href="acasa.html" class="nav-link">Acasa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="despre-noi.html" class="nav-link">Despre noi</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Servicii & Preturi
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="animatori.html">Animatori</a></li>
+                                      <li><a class="dropdown-item" href="ursitoare.html">Ursitoare botez</a></li>
+                                      <li><a class="dropdown-item" href="mos-craciun.html">Inchiriaza Mos Craciun</a></li>
+                                    </ul>
+                                  </li>
+                                <li class="nav-item">
+                                    <a href="galerie.html" class="nav-link">Galerie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+          <!--GALERIE FOTO ANIMATORI-->
+            <div class="container mt-5">
+                <h4 class="text my-5 text-center">Galerie foto</h4>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-md-3 g-lg-4 my-4" id="gallery" data-bs-toggle="modal" data-bs-target="#myGallery">
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail" 
+                         src="images/animatori/cloown.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="0" alt="clown" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail" 
+                         src="images/animatori/kristoff.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="1"  alt="kristoff" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail" 
+                         src="images/animatori/pirate.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="2"  alt="pirate" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"  
+                         src="images/animatori/sofia&prince.jpeg"  data-bs-target="#gallery-images" data-bs-slide-to="3" alt="sofia-prince" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"   
+                         src="images/animatori/spiders.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="4"  alt="spiders" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/animatori/spideer.jpeg"  data-bs-target="#gallery-images" data-bs-slide-to="5"  alt="spiderman1" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/animatori/elsa&spiderman.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="6"  alt="elsa-spiderman" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail" 
+                         src="images/animatori/mickey-mouse.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="7"  alt="mickey" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail" 
+                         src="images/animatori/mickey.jpeg"  data-bs-target="#gallery-images" data-bs-slide-to="8" alt="mickey-mascota" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail" 
+                         src="images/animatori/pirates.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="9" alt="pirates" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail" 
+                         src="images/animatori/batman.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="10"  alt="batman" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/animatori/spidermann.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="11"  alt="spider" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/ursitoare/ingeri-event.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="12"  alt="ingeri1" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/ursitoare/ingeri-botez.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="13"  alt="ingeri2" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/ursitoare/ursitoare3.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="14"  alt="ursitoare" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/ursitoare/ursitoare1.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="15"  alt="ursitoare2" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/mos craciun/mos-acasa.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="16"  alt="mos-acasa" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/mos craciun/mos-ajun.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="17"  alt="mos-ajun" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/mos craciun/mos-eveniment.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="18"  alt="mos-ev" />
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-3">
+                    <img class="gallery-item img-fluid img-thumbnail"
+                         src="images/mos craciun/mos1.jpeg" data-bs-target="#gallery-images" data-bs-slide-to="19"  alt="mos-craciun" />
+                  </div>
+
+        
+                </div>
+              </div>
+
+          <!--MODAL & CAROUSEL GALERIE-->
+      <div class="modal fade" id="gallery-modal" tabindex="-1" role="dialog" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body">
+            <div id="gallery-images" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img class="d-block w-100" id="modal-img" src="images/animatori/cloown.jpeg" alt="clown">
+              </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" id="modal-img" src="images/animatori/kristoff.jpeg" alt="kristoff">
+            </div>
+
+            <div class="carousel-item">
+             <img class=" d-block w-100" id="modal-img" src="images/animatori/pirate.jpeg" alt="pirate">
+            </div>
+
+            <div class="carousel-item">
+              <img class=" d-block w-100" id="modal-img" src="images/animatori/sofia&prince.jpeg" alt="sofia-prince">
+            </div>
+
+            <div class="carousel-item">
+          <img class=" d-block w-100" id="modal-img"  src="images/animatori/spiders.jpeg" alt="spiders">
+            </div>
+
+            <div class="carousel-item">
+              <img class=" d-block w-100" id="modal-img" src="images/animatori/spideer.jpeg" alt="spiderman1">
+            </div>
+
+            <div class="carousel-item">
+             <img class=" d-block w-100" id="modal-img" src="images/animatori/elsa&spiderman.jpeg" alt="elsa-spiderman">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" id="modal-img" src="images/animatori/mickey-mouse.jpeg" alt="mickey">
+            </div>
+
+            <div class="carousel-item">
+            <img class="d-block w-100" id="modal-img" src="images/animatori/mickey.jpeg" alt="mickey-mascota">
+            </div>
+
+            <div class="carousel-item">
+               <img class="d-block w-100" id="modal-img" src="images/animatori/pirates.jpeg" alt="pirates">
+            </div>
+
+            <div class="carousel-item">
+             <img class=" d-block w-100" id="modal-img" src="images/animatori/batman.jpeg" alt="batman">
+            </div>
+
+            <div class="carousel-item">
+            <img class=" d-block w-100" id="modal-img" src="images/animatori/spidermann.jpeg" alt="spider">
+            </div>
+            
+            <div class="carousel-item">
+              <img class="d-block w-100" id="modal-img" src="images/ursitoare/ingeri-event.jpeg" alt="ingeri1">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" id="modal-img" src="images/ursitoare/ingeri-botez.jpeg" alt="ingeri2">
+            </div>
+
+
+            <div class="carousel-item">
+              <img class="d-block w-100" id="modal-img" src="images/ursitoare/ursitoare3.jpeg" alt="ursitoare">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" id="modal-img" src="images/ursitoare/ursitoare1.jpeg" alt="ursitoare2">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" id="modal-img" src="images/mos craciun/mos-acasa.jpeg" alt="mos-acasa">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" id="modal-img" src="images/mos craciun/mos-ajun.jpeg" alt="mos-ajun">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" id="modal-img" src="images/mos craciun/mos-eveniment.jpeg" alt="mos-ev">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" id="modal-img" src="images/mos craciun/mos1.jpeg" alt="mos-craciun">
+          </div>
+        </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#gallery-images" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#gallery-images" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+     </div>
+   </div>
+  </div>
+</div>
+ 
+<!--FOOTER-->
+        <footer class="text-center text-lg-start text-dark"
+                style="background-color: #FFFFFF">
+<!-- Butoane Social Media -->
+      <section class="social-media d-flex justify-content-between p-4 text-dark"
+                style="background-color: #21D192">
+
+        <div class="me-5">
+          <span>Suntem activi și pe rețelele de socializare!</span>
+        </div>
+
+        <div>
+          <a href="https://www.facebook.com/animatoriparadisulvesel" class="text-white me-4">
+          <i class="fab fa-facebook"></i></a>
+
+          <a href="https://www.instagram.com/paradisul.vesel?igsh=MThxdzFpdzYwM2V4Yg%3D%3D&utm_source=qr" class="text-white me-4">
+          <i class="fab fa-instagram"></i></a>
+        </div>
+      </section>
+
+<!-- Link-uri -->
+    <section class="footer-body">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Paradisul Vesel</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 90px; background-color: #131cc5; height: 2px"/>
+              <p>Din 2013, furnizori de servicii de entertainment pentru copii.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Servicii</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #1118ac; height: 2px"/>
+              <p><a href="animatori.html" class="text-dark">Animatori</a></p>
+              <p><a href="ursitoare.html" class="text-dark">Ursitoare botez</a></p>
+              <p><a href="mos-craciun.html" class="text-dark">Inchiriaza Mos Craciun</a></p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Legal</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #1118ac; height: 2px"/>
+              <p><a href="#" class="text-dark">Termeni si conditii</a></p>
+              <p><a href="#" class="text-dark">Politica de confidentialitate</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #1118ac; height: 2px"/>
+              <p><i class="fas fa-envelope mr-3"></i> paradisul.vesel@yahoo.com</p>
+              <p><i class="fas fa-phone mr-3"></i> 0752.020.661</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+          <p>@Paradisul Vesel 2024</p>
+        </div>
+    </footer>
+
+  <script>
+   //JQUERY pt afisare imagini in modal dand click pe ele
+      $(document).ready(function(){
+        $("img").click(function(){
+        $("#gallery-modal").modal('show');
+    });
+  });
+
+</script>
+ 
+    </body>
+</html>
